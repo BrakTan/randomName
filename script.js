@@ -1,8 +1,11 @@
+// Target the p to display the name
 let nameDisplay = document.getElementById('name');
+// Target the button
 let getName = document.getElementById('getNameBtn');
 
 
 getName.addEventListener('click', () => {
+    // Get a random number between 1 and 8
     let x = Math.ceil(Math.random() * 8);
     let chosenName = '';
     switch (x){
@@ -34,6 +37,7 @@ getName.addEventListener('click', () => {
             chosenName = 'Nobody';
             break;
     }
+    // Display the name in the paragraphe
     nameDisplay.innerHTML = chosenName;
 })
 
